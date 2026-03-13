@@ -3,17 +3,18 @@
 // Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
 const pantalla = document.getElementById("pantalla");
 
-let numero = prompt("Ingrese un numero :");
-let suma;
-if (isNaN(numero)) {
-  alert("Lo que ingresaste no es un numero");
-  suma = 0;
-  } else {
-    while (confirm("Ingresa otro numero o cancela")) {
-  let numero2 = prompt("ingrese otro numero :");
-  suma = suma + numero2;
-    suma = numero;
-}
 
+let suma=0
+ 
+while (confirm("Ingresa un numero o salir")){
+
+    let numero = parseInt(prompt("Ingrese el numero :"));
+    if (isNaN(numero)) {
+         alert("Lo que ingresaste no es un numero");
+         
+      } else {
+         suma = suma + numero;
+     }
+    }
   console.log(suma);
-}
+pantalla.innerHTML = `<p>La suma de los numeros ingresados es : ${suma} </p>`
