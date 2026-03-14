@@ -1,4 +1,4 @@
-# Practica de Javascritp
+# Practica de Javascript
 ### Trabajo Practico Nro. 2 Bucles
 <p>
 Algunos temas vistos:
